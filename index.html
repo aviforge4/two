@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Platform</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <!-- Additional CSS for enhanced UI -->
+    <link href="assets/css/enhanced-styles.css" rel="stylesheet">
+    <link href="assets/css/_variables.scss" rel="stylesheet">
+</head>
+<body>
+    <!-- Main Content Area -->
+    <div class="main-container" id="mainContent">
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Top Navigation Bar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container d-flex justify-content-between align-items-center">
+                    <!-- Menu Icon -->
+                    <button class="btn btn-outline-secondary mr-3" id="menuButton" data-toggle="tab" href="#menu" aria-label="Menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <!-- Brand Logo -->
+                    <a class="navbar-brand mx-3" href="#">Brand</a>
+                    <!-- Search Bar -->
+                    <form class="form-inline my-2 my-lg-0 mx-auto d-flex">
+                        <i class="fas fa-search search-icon"></i>
+                        <input class="form-control mr-sm-2 flex-grow-1" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                    <!-- Profile -->
+                    <div class="d-flex align-items-center profile-menu-buttons">
+                        <button class="btn btn-outline-secondary mr-3" id="profileButton" data-toggle="modal" data-target="#profileModal"><i class="fas fa-user"></i> Profile</button>
+                    </div>
+                </div>
+            </nav>
+            <!-- Navigation Tabs -->
+            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fas fa-home"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="photos-tab" data-toggle="tab" href="#photos" role="tab" aria-controls="photos" aria-selected="false"><i class="fas fa-camera"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="following-tab" data-toggle="tab" href="#following" role="tab" aria-controls="following" aria-selected="false"><i class="fas fa-user-friends"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="post-tab" data-toggle="tab" href="#post" role="tab" aria-controls="post" aria-selected="false"><i class="fas fa-pencil-alt"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="upload-tab" data-toggle="tab" href="#upload" role="tab" aria-controls="upload" aria-selected="false"><i class="fas fa-cloud-upload-alt"></i></a>
+                </li>
+            </ul>
+            <!-- Tab Content -->
+            <div class="tab-content" id="myTabContent">
+                <!-- Home Tab -->
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <h6>Home</h6>
+                    <div class="content-grid" id="homeContent">
+                        <!-- Placeholder content for home feed -->
+                        <p>Placeholder content for home feed.</p>
+                    </div>
+                </div>
+                <!-- Photos Tab -->
+                <div class="tab-pane fade" id="photos" role="tabpanel" aria-labelledby="photos-tab">
+                    <h6>Photos</h6>
+                    <div class="content-grid" id="photosContent">
+                        <!-- Placeholder content for photos feed -->
+                        <p>Placeholder content for photos feed.</p>
+                    </div>
+                </div>
+                <!-- Following Tab -->
+                <div class="tab-pane fade" id="following" role="tabpanel" aria-labelledby="following-tab">
+                    <h6>Following</h6>
+                    <div class="content-grid" id="followingContent">
+                        <!-- Placeholder content for following feed -->
+                        <p>Placeholder content for following feed.</p>
+                    </div>
+                </div>
+                <!-- Post Tab (Hidden Content) -->
+                <div class="tab-pane fade" id="post" role="tabpanel" aria-labelledby="post-tab">
+                    <h6>Post</h6>
+                    <p>This tab will be used for posting content in the future.</p>
+                </div>
+                <!-- Upload Content Tab -->
+                <div class="tab-pane fade" id="upload" role="tabpanel" aria-labelledby="upload-tab">
+                    <h6>Upload Content</h6>
+                    <p>This tab will be for future uploads</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JavaScript and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/upload.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

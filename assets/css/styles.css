@@ -1,0 +1,181 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    padding-top: 20px;
+}
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.25rem; /* Adjusted size */
+}
+
+.navbar-brand:hover {
+    color: #555;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: -1px;
+}
+
+.nav-tabs .nav-link {
+    color: #555;
+    border: 1px solid transparent;
+    border-radius: 0;
+    font-size: 0.875rem; /* Adjusted size */
+}
+
+.nav-tabs .nav-link.active {
+    color: #333;
+    background-color: #fff;
+    border-color: #ddd #ddd #fff;
+}
+
+.navbar .form-inline {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.form-control {
+    width: 250px;
+    max-width: 100%;
+    border-radius: 20px;
+    padding-left: 34px; /* Adjusted padding */
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.form-control::placeholder {
+    color: #ccc;
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc;
+    font-size: 0.875rem; /* Adjusted size */
+}
+
+/* Profile and Menu Buttons */
+.profile-menu-buttons {
+    margin-left: 10px;
+}
+
+.btn-outline-secondary {
+    color: #555;
+    border-color: #ccc;
+    font-size: 0.875rem; /* Adjusted size */
+}
+
+.btn-outline-secondary:hover {
+    color: #333;
+    border-color: #bbb;
+    background-color: #f8f9fa;
+}
+
+.btn-secondary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-secondary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Tab content */
+.tab-content {
+    padding: 20px;
+}
+
+.tab-pane {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-top: 0;
+    padding: 20px;
+}
+
+.tab-pane h6 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.content-grid p {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar .form-inline {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .form-control {
+        width: 150px;
+        padding-left: 28px; /* Adjusted padding */
+    }
+
+    .search-icon {
+        left: 8px;
+    }
+
+    .navbar-brand {
+        font-size: 16px;
+    }
+
+    .btn-outline-secondary, .btn-secondary {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .nav-tabs .nav-link {
+        font-size: 14px;
+    }
+
+    .tab-pane h6 {
+        font-size: 16px;
+    }
+
+    .content-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .navbar-brand, .profile-menu-buttons {
+        font-size: 14px;
+    }
+
+    .navbar .form-inline .form-control {
+        padding-left: 28px;
+    }
+}

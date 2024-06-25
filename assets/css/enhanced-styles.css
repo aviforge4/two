@@ -1,0 +1,32 @@
+/* Additional styles for enhanced UI */
+.navbar {
+    padding: 10px 20px;
+}
+
+.nav-tabs {
+    padding: 10px 0;
+}
+
+.nav-tabs .nav-link {
+    padding: 10px 15px;
+    font-size: 20px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+.btn-outline-success {
+    color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-outline-success:hover {
+    color: #1e7e34;
+    border-color: #1c7430;
+    background-color: #f8f9fa;
+}
+
+.btn-outline-success:focus, .btn-outline-success.focus {
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+}
